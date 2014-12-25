@@ -13,6 +13,6 @@ class IndexController extends Controller {
     	);   	
     	$category_list=$category->where($where)->order("category_order desc")->select();
     	$this->assign("category_list",$category_list);
-     	$this->display();  
+     	$this->display();  	
     }
 }
