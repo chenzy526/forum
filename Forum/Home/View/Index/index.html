@@ -355,41 +355,6 @@
 .study_nge_zdy .bm{margin-bottom: 10px;}
 .study_nge_zdy .floattitle{border: 1px solid #CDCDCD;}
 </style>
-<div class="study_nge_auto" id="study_nge_div">
-<div class="fl bm">
-<div class="bm_h cl">
-<span class="z">
-	<table>
-	<tbody>
-	<tr>
-	<td style="line-height:20px;height:20px;margin-top:5px;">
-	<object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" align="left" valign="middle" width="60px" height="25">
-	<param name="movie" value="source/plugin/study_nge/images/clock.swf">
-	<param name="quality" value="high"><param name="wmode" value="transparent">
-	<embed src="source/plugin/study_nge/images/clock.swf" quality="high" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="60px" height="25px" value="transparent">
-	</object>
-	</td>
-	<td style="line-height:20px;height:20px;margin-top:10px;">
-	</td>
-	</tr>
-	</tbody>
-	</table>
-</span>
-</div>
-<div id="category_study_nge">
-<div style="">
-
-
-
-
-
-<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-collapse: collapse;">
-    </table>
-</div>
-</div>
-</div>
-</div>
-
 <div id="nge_sslct_menu" class="cl p_pop" style="display: none;">
 <span class="sslct_btn" onclick="nge_extstyle(&#39;&#39;)" title="默认"><i></i></span>
 <span class="sslct_btn" onclick="nge_extstyle(&#39;1&#39;)" title="蓝色"><i style="background:#0053B9"></i></span>
@@ -1076,30 +1041,7 @@
 </dl>
 </td>
 </tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-117-1.html"><img src="__PUBLIC/image/forum.gif" alt="免费下载VIP项目实战"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-117-1.html">免费下载VIP项目实战</a></dt>
-<dd><em>主题: 20</em>, <em>帖数: 8615</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=36593&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 22:16">昨天&nbsp;22:16</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-134-1.html"><img src="__PUBLIC/image/forum.gif" alt="原创电子产品评测"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-134-1.html">原创电子产品评测</a></dt>
-<dd><em>主题: 4</em>, <em>帖数: 81</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=36935&goto=lastpost#lastpost">最后发表: 2014-10-11 08:56</a>
-</dd>
-</dl>
-</td>
-<td width="24.9%">&nbsp;</td><td width="24.9%">&nbsp;</td></tr>
+
 </tbody></table>
 </div>
 </div><div class="bm bmw  flg cl">
@@ -1432,12 +1374,7 @@
 </tbody></table>
 </div>
 </div><div class="bm bmw  cl">
-<div class="bm_h cl">
-<span class="o">
-<img id="category_112_img" src="__PUBLIC/image/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse(&#39;category_112&#39;);">
-</span>
-<h2><a href="http://bbs.houdunwang.com/forum.php?gid=112" style="">办公室</a></h2>
-</div>
+
 <div id="category_112" class="bm_c" style="">
 <table cellspacing="0" cellpadding="0" class="fl_tb">
 <tbody><tr><td class="fl_icn">
