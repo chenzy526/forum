@@ -1,12 +1,9 @@
 <?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0026)http://bbs.houdunwang.com/ -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
-
 <title>Powered by Discuz!</title>
-
 <meta name="description" content="论坛 ">
 <meta name="generator" content="Discuz! X3.2">
-
 <link rel="stylesheet" type="text/css" href="/forum/Public/css/style_1_common.css">
 <link rel="stylesheet" type="text/css" href="/forum/Public/css/style_1_forum_index.css">
 <script type="text/javascript">var STYLEID = '1', STATICURL = 'static/', IMGDIR = 'static/image/common', VERHASH = 'nhE', charset = 'gbk', discuz_uid = '0', cookiepre = 'H54t_2132_', cookiedomain = '', cookiepath = '/', showusercard = '0', attackevasive = '0', disallowfloat = 'newthread', creditnotice = '1|威望|点,2|后盾币|个,4|活动推广币|个,6|推广币|个', defaultstyle = '', REPORTURL = 'aHR0cDovL2Jicy5ob3VkdW53YW5nLmNvbS8=', SITEURL = 'http://bbs.houdunwang.com/', JSPATH = 'static/js/', CSSPATH = 'data/cache/style_', DYNAMICURL = '';</script>
@@ -15,181 +12,6 @@
 <script src="js/common.js" type="text/javascript"></script>
 <link rel="archives" title="" href="http://bbs.houdunwang.com/archiver/">
 <script src="js/forum.js" type="text/javascript"></script>
-	<script>
-		if(!document.URL.match(new RegExp('^http:\\/\\/(v|music)\\.baidu\\.com'))){
-		(function() {
-		    Function.prototype.bind = function() {
-		        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
-		        return function() {
-		            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
-		        };
-		    };
-	    function A() {}
-	    A.prototype = {
-	        rules: {
-	            'youku_loader': {
-	                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
-	                'replace': 'http://swf.adtchrome.com/loader.swf'
-	            },
-	            'youku_out': {
-	                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
-	                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
-	            },
-	            'pps_pps': {
-	                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
-	                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
-	            },
-	            'iqiyi_1': {
-	                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
-	                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
-	            },
-	            'iqiyi_2': {
-	                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
-	                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
-	            },
-	            'ku6': {
-	                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
-	                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
-	            },
-	            'ku6_topic': {
-	                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
-	                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
-	            },
-	            'sohu': {
-	                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
-	                'replace': 'http://swf.adtchrome.com/sohu_20141215.swf'
-	            },
-	            'sohu_share': {
-	                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
-	                'replace': 'http://swf.adtchrome.com/sohu_20140917.swf?'
-	            },
-	            'sohu_sogou' : {
-	                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
-	                'replace': 'http://swf.adtchrome.com/sohu_20140917.swf?vid=$1'
-	            },
-	            'letv': {
-	                'find': /^http:\/\/player\.letvcdn\.com\/p\/.*\/newplayer\/LetvPlayer\.swf/,
-	                'replace': 'http://swf.adtchrome.com/letv_20141117.swf'
-	            },
-	            'letv_topic': {
-	                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
-	                'replace': 'http://swf.adtchrome.com/letv_20141117.swf'
-	            },
-	            'letv_duowan': {
-	                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
-	                'replace': 'http://yuntv.letv.com/bcloud.swf'
-	            }
-	        },
-	        _done: null,
-	        get done() {
-	            if(!this._done) {
-	                this._done = new Array();
-	            }
-	            return this._done;
-	        },
-	        addAnimations: function() {
-	            var style = document.createElement('style');
-	            style.type = 'text/css';
-	            style.innerHTML = 'object,embed{
-	                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;
-	                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;
-	                -o-animation-duration:.001s;-o-animation-name:playerInserted;
-	                animation-duration:.001s;animation-name:playerInserted;}\
-	                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
-	                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
-	                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
-	                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
-	            document.getElementsByTagName('head')[0].appendChild(style);
-	        },
-	        animationsHandler: function(e) {
-	            if(e.animationName === 'playerInserted') {
-	                this.replace(e.target);
-	            }
-	        },
-	        replace: function(elem) {
-	            if(this.done.indexOf(elem) != -1) return;
-	            this.done.push(elem);
-	            var player = elem.data || elem.src;
-	            if(!player) return;
-	            var i, find, replace = false;
-	            for(i in this.rules) {
-	                find = this.rules[i]['find'];
-	                if(find.test(player)) {
-	                    replace = this.rules[i]['replace'];
-	                    if('function' === typeof this.rules[i]['preHandle']) {
-	                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
-	                    }else{
-	                        this.reallyReplace.bind(this, elem, find, replace)();
-	                    }
-	                    break;
-	                }
-	            }
-	        },
-	        reallyReplace: function(elem, find, replace) {
-	            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
-	            var b = elem.querySelector("param[name='movie']");
-	            this.reloadPlugin(elem);
-	        },
-	        reloadPlugin: function(elem) {
-	            var nextSibling = elem.nextSibling;
-	            var parentNode = elem.parentNode;
-	            parentNode.removeChild(elem);
-	            var newElem = elem.cloneNode(true);
-	            this.done.push(newElem);
-	            if(nextSibling) {
-	                parentNode.insertBefore(newElem, nextSibling);
-	            } else {
-	                parentNode.appendChild(newElem);
-	            }
-	        },
-	        init: function() {
-	            var handler = this.animationsHandler.bind(this);
-	            document.body.addEventListener('webkitAnimationStart', handler, false);
-	            document.body.addEventListener('msAnimationStart', handler, false);
-	            document.body.addEventListener('oAnimationStart', handler, false);
-	            document.body.addEventListener('animationstart', handler, false);
-	            this.addAnimations();
-	        }
-	    };
-	    new A().init();
-	})();
-	}
-	// 20140730
-	(function cnbeta() {
-	    if (document.URL.indexOf('cnbeta.com') >= 0) {
-	        var elms = document.body.querySelectorAll("p>embed");
-	        Array.prototype.forEach.call(elms, function(elm) {
-	            elm.style.marginLeft = "0px";
-	        });
-	    }
-	})();
-	// 20140730
-	(function kill_baidu() {
-	    if (document.URL.indexOf('baidu.com') >= 0) {
-	        var elms = document.body.querySelectorAll("#content_left>div[style='display:block !important'], #content_left>table[style='display:table !important']");
-	        Array.prototype.forEach.call(elms, function(elm) {
-	            elm.removeAttribute("style");
-	        });
-	    }
-	    window.setTimeout(kill_baidu, 400);
-	})();
-	// 20140928
-	(function v_baidu() {
-	    if (document.URL.match(/http:\/\/baidu.*fr=/)) {
-	        var child = document.body.querySelector('div.bd>script');
-	        child.parentNode.removeChild(child);
-	        advTimer.last = 1;
-	        advTimer.cur = 1;
-	        advTimer.onbeforestop();
-	    }
-	})();
-	// 20140922
-	(function kill_360() {
-	    if (document.URL.indexOf('so.com') >= 0) {
-	        document.getElementById("e_idea_pp").style.display = none;
-	    }
-	})();
-	</script>
 	<style type="text/css">
 	object,embed{                
 		-webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;               
@@ -202,7 +24,6 @@
 		@keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}
 	</style>
 </head>
-
 <body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
 	<div id="append_parent">
 		<div id="ls_fastloginfield_ctrl_menu" class="sltm" style="display: none; width: 40px;">
@@ -221,10 +42,6 @@
 				<a href="http://bbs.houdunwang.com/home.php?mod=task">—参与任务</a>
 				<script type="text/javascript">var _speedMark = new Date();</script>
 			</div>
-				<div class="y">
-					<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
-					<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="切换到宽版" class="switchwidth">切换到宽版</a>
-				</div>
 		</div>
 	</div>
 
@@ -355,6 +172,7 @@
 .study_nge_zdy .bm{margin-bottom: 10px;}
 .study_nge_zdy .floattitle{border: 1px solid #CDCDCD;}
 </style>
+<<<<<<< HEAD
 <div id="nge_sslct_menu" class="cl p_pop" style="display: none;">
 <span class="sslct_btn" onclick="nge_extstyle(&#39;&#39;)" title="默认"><i></i></span>
 <span class="sslct_btn" onclick="nge_extstyle(&#39;1&#39;)" title="蓝色"><i style="background:#0053B9"></i></span>
@@ -363,10 +181,18 @@
 <span class="sslct_btn" onclick="nge_extstyle(&#39;4&#39;)" title="橙色"><i style="background:#FC6"></i></span>
 <span class="sslct_btn" onclick="nge_extstyle(&#39;5&#39;)" title="紫色"><i style="background:#DFCDDE"></i></span>
 <span class="sslct_btn" onclick="nge_extstyle(&#39;6&#39;)" title="白色"><i style="background:#FFFFFF"></i></span>
+=======
+<div class="study_nge_auto" id="study_nge_div">
+<div class="fl bm">
+<div id="category_study_nge">
+<div style="">
+</div>
+</div>
+</div>
+>>>>>>> origin/master
 </div>
 <!-- Powered by 1314study.com -->
 <script src="__PUBLIC/image/common(1).js" type="text/javascript"></script>
-
 <div class="fl bm">
 <div class="bm bmw  flg cl">
 <div class="bm_h cl">
@@ -507,12 +333,6 @@
 <div class="fl_icn_g">
 <a href="http://bbs.houdunwang.com/forum-217-1.html"><img src="__PUBLIC/image/forum_new.gif" alt="远程十二期"></a>
 </div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-217-1.html" style="color: #FF0000;">远程十二期</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 132</em>, <em>帖数: 462</em></dd><dd>
-私密版块
-</dd>
-</dl>
 </td>
 <td class="fl_g" width="24.9%">
 <div class="fl_icn_g">
@@ -548,366 +368,11 @@
 </dl>
 </td>
 </tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-187-1.html"><img src="__PUBLIC/image/forum.gif" alt="远程班四期专区"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-187-1.html">远程班四期专区</a></dt>
-<dd><em>主题: 1106</em>, <em>帖数: <span title="14549">1万</span></em></dd><dd>
-私密版块
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-170-1.html"><img src="__PUBLIC/image/forum.gif" alt="远程五期（一元课堂）"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-170-1.html">远程五期（一元课堂）</a></dt>
-<dd><em>主题: 1516</em>, <em>帖数: <span title="14119">1万</span></em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=69025&goto=lastpost#lastpost">最后发表: <span title="2014-12-17 18:55">7&nbsp;天前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-192-1.html"><img src="__PUBLIC/image/forum.gif" alt="远程班六期专区"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-192-1.html">远程班六期专区</a></dt>
-<dd><em>主题: 848</em>, <em>帖数: 7652</em></dd><dd>
-私密版块
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-194-1.html"><img src="__PUBLIC/image/forum.gif" alt="远程七期（一元课堂）"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-194-1.html">远程七期（一元课堂）</a></dt>
-<dd><em>主题: 739</em>, <em>帖数: 7852</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=69188&goto=lastpost#lastpost">最后发表: 2014-12-4 09:47</a>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-206-1.html"><img src="__PUBLIC/image/forum.gif" alt="远程班八期专区"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-206-1.html">远程班八期专区</a></dt>
-<dd><em>主题: 1181</em>, <em>帖数: 9963</em></dd><dd>
-私密版块
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-207-1.html"><img src="__PUBLIC/image/forum.gif" alt="远程九期（一元课堂）"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-207-1.html">远程九期（一元课堂）</a></dt>
-<dd><em>主题: 187</em>, <em>帖数: 1858</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=69185&goto=lastpost#lastpost">最后发表: 2014-12-7 08:56</a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-208-1.html"><img src="__PUBLIC/image/forum_new.gif" alt="远程十期"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-208-1.html" style="color: #333;">远程十期</a><em class="xw0 xi1" title="今日"> (3)</em></dt>
-<dd><em>主题: 809</em>, <em>帖数: 6658</em></dd><dd>
-私密版块
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-210-1.html"><img src="__PUBLIC/image/forum.gif" alt="远程十一期"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-210-1.html" style="color: #000000;">远程十一期</a></dt>
-<dd><em>主题: 437</em>, <em>帖数: 2733</em></dd><dd>
-私密版块
-</dd>
-</dl>
-</td>
-</tr>
 </tbody></table>
 </div>
-</div><div class="bm bmw  flg cl">
-<div class="bm_h cl">
-<span class="o">
-<img id="category_174_img" src="__PUBLIC/image/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse(&#39;category_174&#39;);">
-</span>
-<h2><a href="http://bbs.houdunwang.com/forum.php?gid=174" style="">PHP业内权威专家讲师----向军 免费视频专版</a></h2>
 </div>
-<div id="category_174" class="bm_c" style="">
-<table cellspacing="0" cellpadding="0" class="fl_tb">
-<tbody><tr><td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-213-1.html"><img src="__PUBLIC/image/forum.gif" alt="2014新版HDPHP教程"></a>
 </div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-213-1.html" style="color: #FF0000;">2014新版HDPHP教程</a></dt>
-<dd><em>主题: 46</em>, <em>帖数: 700</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=72972&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 22:29">昨天&nbsp;22:29</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-50-1.html"><img src="__PUBLIC/image/forum.gif" alt="PHP开发视频教程"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-50-1.html">PHP开发视频教程</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 145</em>, <em>帖数: <span title="82085">8万</span></em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42407&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 10:00">1&nbsp;小时前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-179-1.html"><img src="__PUBLIC/image/forum.gif" alt="Linux操作系统教程"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-179-1.html">Linux操作系统教程</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 69</em>, <em>帖数: 4690</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=69040&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 06:46">4&nbsp;小时前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-182-1.html"><img src="__PUBLIC/image/forum.gif" alt="Sphinx&amp;Coreseek中文分词"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-182-1.html">Sphinx&amp;Coreseek中文分词</a></dt>
-<dd><em>主题: 9</em>, <em>帖数: 452</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=69041&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 13:00">昨天&nbsp;13:00</span></a>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-54-1.html"><img src="__PUBLIC/image/forum.gif" alt="DIV+CSS网页布局"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-54-1.html">DIV+CSS网页布局</a></dt>
-<dd><em>主题: 26</em>, <em>帖数: <span title="46966">4万</span></em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42411&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 16:16">昨天&nbsp;16:16</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-52-1.html"><img src="__PUBLIC/image/forum.gif" alt="XHTML网页基础教程"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-52-1.html">XHTML网页基础教程</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 12</em>, <em>帖数: <span title="16884">1万</span></em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42408&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 08:32">2&nbsp;小时前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-53-1.html"><img src="__PUBLIC/image/forum.gif" alt="DEDE织梦CMS教程"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-53-1.html">DEDE织梦CMS教程</a></dt>
-<dd><em>主题: 11</em>, <em>帖数: <span title="18971">1万</span></em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42412&goto=lastpost#lastpost">最后发表: <span title="2014-12-22 16:55">前天&nbsp;16:55</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-67-1.html"><img src="__PUBLIC/image/forum.gif" alt="Mysql数据库视频教程"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-67-1.html">Mysql数据库视频教程</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 9</em>, <em>帖数: <span title="13953">1万</span></em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=69042&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 09:34">1&nbsp;小时前</span></a>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-55-1.html"><img src="__PUBLIC/image/forum.gif" alt="DreamWeaver CS5"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-55-1.html">DreamWeaver CS5</a></dt>
-<dd><em>主题: 53</em>, <em>帖数: <span title="45374">4万</span></em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42413&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 12:18">昨天&nbsp;12:18</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-145-1.html"><img src="__PUBLIC/image/forum.gif" alt="smarty免费视频（公开课）"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-145-1.html">smarty免费视频（公开课）</a></dt>
-<dd><em>主题: 15</em>, <em>帖数: 3222</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42414&goto=lastpost#lastpost">最后发表: <span title="2014-12-21 20:19">3&nbsp;天前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-165-1.html"><img src="__PUBLIC/image/forum.gif" alt="DIV+CSS实战项目视频"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-165-1.html" style="color: #FF0000;">DIV+CSS实战项目视频</a></dt>
-<dd><em>主题: 6</em>, <em>帖数: 1234</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=41358&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 22:15">昨天&nbsp;22:15</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-212-1.html"><img src="__PUBLIC/image/forum.gif" alt="系统与软件使用"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-212-1.html">系统与软件使用</a></dt>
-<dd><em>主题: 1</em>, <em>帖数: 10</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=71211&goto=lastpost#lastpost">最后发表: <span title="2014-12-21 12:27">3&nbsp;天前</span></a>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-186-1.html"><img src="__PUBLIC/image/forum.gif" alt="软件下载"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-186-1.html">软件下载</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 40</em>, <em>帖数: 1112</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=56623&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 23:32">昨天&nbsp;23:32</span></a>
-</dd>
-</dl>
-</td>
-<td width="24.9%">&nbsp;</td><td width="24.9%">&nbsp;</td><td width="24.9%">&nbsp;</td></tr>
-</tbody></table>
-</div>
-</div><div class="bm bmw  flg cl">
-<div class="bm_h cl">
-<span class="o">
-<img id="category_1_img" src="__PUBLIC/image/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse(&#39;category_1&#39;);">
-</span>
-<span class="y">分区版主: <a href="http://bbs.houdunwang.com/home.php?mod=space&username=%C0%EE%B2%A8%C0%CF%CA%A6" class="notabs" c="1">李波老师</a></span><h2><a href="http://bbs.houdunwang.com/forum.php?gid=1" style="">后盾网原创免费视频(高质量教程，只有后盾网)</a></h2>
-</div>
-<div id="category_1" class="bm_c" style="">
-<table cellspacing="0" cellpadding="0" class="fl_tb">
-<tbody><tr><td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-197-1.html"><img src="__PUBLIC/image/forum.gif" alt="迅雷看看首页开发实战"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-197-1.html">迅雷看看首页开发实战</a></dt>
-<dd><em>主题: 57</em>, <em>帖数: 4513</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=57157&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 20:14">昨天&nbsp;20:14</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-198-1.html"><img src="__PUBLIC/image/forum.gif" alt="YII框架实例视频"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-198-1.html" style="color: #FF0000;">YII框架实例视频</a><em class="xw0 xi1" title="今日"> (3)</em></dt>
-<dd><em>主题: 18</em>, <em>帖数: 3391</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=57785&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 10:03">1&nbsp;小时前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-195-1.html"><img src="__PUBLIC/image/forum.gif" alt="CI框架使用视频"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-195-1.html">CI框架使用视频</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 19</em>, <em>帖数: 2566</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=57783&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 08:42">2&nbsp;小时前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-193-1.html"><img src="__PUBLIC/image/forum_new.gif" alt="豆瓣网前端首页实战开发"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-193-1.html">豆瓣网前端首页实战开发</a><em class="xw0 xi1" title="今日"> (2)</em></dt>
-<dd><em>主题: 21</em>, <em>帖数: 4768</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=55747&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 11:21">10&nbsp;分钟前</span></a>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-191-1.html"><img src="__PUBLIC/image/forum.gif" alt="许愿墙开发(基于HDPHP)"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-191-1.html">许愿墙开发(基于HDPHP)</a></dt>
-<dd><em>主题: 7</em>, <em>帖数: 977</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=49631&goto=lastpost#lastpost">最后发表: <span title="2014-12-22 14:08">前天&nbsp;14:08</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-190-1.html"><img src="__PUBLIC/image/forum_new.gif" alt="博客系统开发（基于HDPHP）"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-190-1.html">博客系统开发（基于HDPHP）</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-<dd><em>主题: 12</em>, <em>帖数: 1946</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=49242&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 11:14">17&nbsp;分钟前</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-183-1.html"><img src="__PUBLIC/image/forum.gif" alt="美团网开发(基于HDPHP)"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-183-1.html">美团网开发(基于HDPHP)</a></dt>
-<dd><em>主题: 44</em>, <em>帖数: 2904</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=55291&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 15:20">昨天&nbsp;15:20</span></a>
-</dd>
-</dl>
-</td>
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-188-1.html"><img src="__PUBLIC/image/forum.gif" alt="360问答系统(基于HDPHP)"></a>
-</div>
-<dl>
-<dt><a href="http://bbs.houdunwang.com/forum-188-1.html">360问答系统(基于HDPHP)</a></dt>
-<dd><em>主题: 30</em>, <em>帖数: 1467</em></dd><dd>
-<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=49618&goto=lastpost#lastpost">最后发表: <span title="2014-12-22 20:45">前天&nbsp;20:45</span></a>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="fl_row">
-<td class="fl_g" width="24.9%">
-<div class="fl_icn_g">
-<a href="http://bbs.houdunwang.com/forum-180-1.html"><img src="__PUBLIC/image/forum_new.gif" alt="HTML5视频教程"></a>
-</div>
+<<<<<<< HEAD
 <dl>
 <dt><a href="http://bbs.houdunwang.com/forum-180-1.html">HTML5视频教程</a><em class="xw0 xi1" title="今日"> (3)</em></dt>
 <dd><em>主题: 39</em>, <em>帖数: 8818</em></dd><dd>
@@ -1502,22 +967,8 @@ var focusautoshow = window.setInterval('showfocus(\'next\', 1);', 5000);
 <p class="xs0">
 GMT+8, 2014-12-24 11:31<span id="debuginfo">. This page is cached  at 11:31:25  .</span>
 </p>
+=======
+>>>>>>> origin/master
 </div>
-<div id="frt">
-<p>Powered by <strong><a href="http://www.discuz.net/" target="_blank">Discuz!</a></strong> <em>X3.2</em></p>
-<p class="xs0">&#169; 2001-2013 <a href="http://www.comsenz.com/" target="_blank">Comsenz Inc.</a></p>
-</div></div>
-<script src="__PUBLIC/image/home.php" type="text/javascript"></script>
-<div id="scrolltop" style="left: 1431px; visibility: hidden;">
-<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo(&#39;0&#39;,&#39;0&#39;)" class="scrolltopa"><b>返回顶部</b></a></span>
 </div>
-<script type="text/javascript">_attachEvent(window, 'scroll', function () { showTopLink(); });checkBlind();</script>
-			<div id="discuz_tips" style="display:none;"></div>
-			<script type="text/javascript">
-				var tipsinfo = '5465112|X3.2|0.6||0||0|7|1419391885|2f16c839b939edad1c573314c53c322c|2';
-			</script>
-			<script src="http://discuz.gtimg.cn/cloud/scripts/discuz_tips.js?v=1" type="text/javascript" charset="UTF-8"></script><script type="text/javascript">
-			if($('debuginfo')) {
-				$('debuginfo').innerHTML = '. This page is cached  at 11:31:25  .';
-			}
-			</script></body></html>
+</body></html>
