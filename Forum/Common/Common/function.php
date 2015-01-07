@@ -24,10 +24,6 @@
 	return $suffix ? $slice.'...' : $slice;
 }
 
-
-
-
-
 function NaviGation($parent_id=0){
 	$category=M("Category");
 	$rows=$category->order()->where(array("category_stats"=>1,"parent_id"=>1,"parent_id"=>$parent_id))->select();

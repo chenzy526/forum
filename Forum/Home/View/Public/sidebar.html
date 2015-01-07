@@ -1,0 +1,72 @@
+			<ul>
+				<li>
+					<h2>会员中心</h2>
+					<!--登录-->
+					<div id="User-Login">
+					<div id="minicard"></div>
+					<if condition="$login eq 1 ">
+						<script type="text/javascript">
+							$("#minicard").load("__PROJECT_URL__"+"?m=user&a=userminicard");
+						</script>
+					<else /> 
+					<form  method="post" id="userloginform" name="userloginform" onsubmit="return userlogin(this)" action="__PROJECT_URL__?m=user&a=userlogin">
+                       <p>邮箱：<input name="user_email" onclick="clname();" type="text" id="user_email" value="用户名/邮箱"  />
+                      </p>
+                       <p>密码：<input type="password" name="password" id="password"  /></p>
+                       <p><span>验证：</span><span><input type="text" size="6" class="Verification" id="Verification"  /></span><span><img src="http://tp.localhost/index.php/index/verify"  onclick="show(this);"/></span></p>
+                       <p><input type="submit"  id="UserLoginBut" value="登录" /><span>[<a  href="__PROJECT_URL__?m=user&a=register" target="_blank">注册新用户</a>]</span><span>[<a  href="__PROJECT_URL__?m=user&a=getpassword" target="_blank">忘记密码</a>]</span>
+                       <p class="wei_ico"><span>使用其它帐号登录：</span>
+                       <span><a id="qqLink"  title="使用QQ登录"   href="__PROJECT_URL__?m=user&a=weibologin&wid=1">使用QQ帐号登录</a></span>
+                       <span><a id="sinaLink"  title="使用新浪微博帐户登录"   href="__PROJECT_URL__?m=user&a=weibologin&wid=2">使用新浪微博帐户登录</a></span></p>
+                       
+                   </form>
+                       <script type="text/javascript">
+   						function show(obj){
+      						obj.src="__PROJECT_URL__?verify=1&"+Math.random();
+      
+   						}
+   						//微博登录
+   						function sina_weibo_login(){
+	   						window.location.href="";
+   						}
+   						function userlogin(obj){
+   							var url = obj.action;
+	   						$.post(url, { user_email:$("#user_email").val(), password:$("#password").val(), verify:$("#Verification").val()}, function(json){
+	   							if(json.status){
+		   							//登录成功
+		   							$("#userloginform").remove();
+		   							$("#minicard").load("__PROJECT_URL__"+"?m=user&a=userminicard");
+	   							}else{
+	   								//登录失败
+		   							alert( json.info);
+	   							}
+		   							
+		   					},"json");
+	   						return false;
+   						}
+						
+					</script>
+					
+                     </if>
+                     
+                    </div>
+                    <!--end登录-->
+                    
+                    
+				</li>
+				<li>
+					<h2>最新回复</h2>
+					<ul>
+                    <volist name=":NewBbsTopic(10,true)" id="vo">
+                    	<li><a href="<!--{$vo.id|PageURL=###}-->" title="<!--{$vo.title}-->"><!--{$vo.title}--></a></li>
+                    </volist>
+					</ul>
+				</li>
+				<li>
+					<h2>用户排行榜</h2>
+					<ul>
+                    
+                    
+                       					</ul>
+				</li>
+			</ul>
