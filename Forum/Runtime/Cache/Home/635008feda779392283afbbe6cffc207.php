@@ -1,287 +1,130 @@
-<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
-<title>Powered by Discuz!</title>
-<meta name="description" content="论坛 ">
-<meta name="generator" content="Discuz! X3.2">
-<link rel="stylesheet" type="text/css" href="/forum/Public/css/style_1_common.css">
-<link rel="stylesheet" type="text/css" href="/forum/Public/css/style_1_forum_index.css">
-<style type="text/css" adt="123"></style>
-<style type="text/css"></style>
-<script src="js/common.js" type="text/javascript"></script>
-<link rel="archives" title="" href="http://bbs.houdunwang.com/archiver/">
-<link href="/forum/Public"/nge.css" rel="stylesheet" type="text/css">
-<script src="__PUBLIC/image/core.php" charset="utf-8" type="text/javascript"></script>
-<script type="text/javascript" src="http://tcss.qq.com/ping.js?v=1VERHASH" charset="utf-8"></script>
-<script src="js/forum.js" type="text/javascript"></script>
-<script src="__PUBLIC/image/common(1).js" type="text/javascript"></script>	
-</head>
-<body id="nv_forum" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
-	<div id="append_parent">
-		<div id="ls_fastloginfield_ctrl_menu" class="sltm" style="display: none; width: 40px;">
-			<ul>
-				<li class="current">用户名</li>
-				<li>Email</li>
-			</ul>
-		</div>
-	</div>
-	<div id="toptb" class="cl">
-		<div class="wp">
-			<div class="z">
-				<a href="javascript:;" onclick="setHomepage(&#39;http://bbs.houdunwang.com/&#39;);">设为首页</a>
-				<a href="__PUBLIC/image/" onclick="addFavorite(this.href, &#39;&#39;);return false;">—收藏本站</a>
-			</div>
-		</div>
-	</div>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>
+<?php if($pageTitle != '' ): ?><!--<?php echo ($pageTitle); ?>-->- __PROJECT_NAME__
+<?php else: ?> 首页- __PROJECT_NAME__<?php endif; ?>
+</title>
+<meta name="keywords" content="<!--<?php echo ($keywords); ?>--> -<!--<?php echo ($pageTitle); ?>-->-__PROJECT_NAME__" />
+<meta name="description" content="<!--<?php echo ($description); ?>-->- <!--<?php echo ($pageTitle); ?>-->-__PROJECT_NAME__" />
 
-	<div id="qmenu_menu" class="p_pop blk" style="display: none;">
-		<div class="ptm pbw hm">
-		请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航<br>没有帐号？<a href="" class="xi2 xw1">注册</a>
-		</div>
-	</div>
-	<div id="hd">
-		<div class="wp">
-			<div class="hdc cl">
-			    <h2><a href="owered by Discuz!.html" title=""><img src="/forum/Public/logo.png" alt="" border="0"></a></h2>
-			    <script src="/logging.js" type="text/javascript"></script>
-				<form method="post" autocomplete="off" id="lsform" action="" onsubmit="return lsSubmit();">
-					<div class="fastlg cl">
-					<span id="return_ls" style="display:none"></span>
-						<div class="y pns">
-							<table cellspacing="0" cellpadding="0">
-								<tbody>
-									<tr>
-										<td>
-											<span class="ftid">
-											<select name="fastloginfield" id="ls_fastloginfield" width="40" tabindex="900" selecti="0" style="display: none;">
-											<option value="username"></option></select><a href="javascript:;" id="ls_fastloginfield_ctrl" style="width:40px" tabindex="900">用户名</a>
-											</span>
-											<script type="text/javascript">simulateSelect('ls_fastloginfield')</script>
-										</td>
-										<td><input type="text" name="username" id="ls_username" autocomplete="off" class="px vm" tabindex="901"></td>
-										<td class="fastlg_l">
-											<label for="ls_cookietime">
-											<input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="2592000" tabindex="903">自动登录
-											</label>
-										</td>
-										<td>&nbsp;<a href="javascript:;" onclick="showWindow(&#39;login&#39;, &#39;member.php?mod=logging&amp;action=login&amp;viewlostpw=1&#39;)">找回密码</a></td>
-									</tr>
-									<tr>
-										<td><label for="ls_password" class="z psw_w">密码</label></td>
-										<td><input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" tabindex="902"></td>
-										<td class="fastlg_l"><button type="submit" class="pn vm" tabindex="904" style="width: 75px;"><em>登录</em></button></td>
-										<td>&nbsp;<a href="http://bbs.houdunwang.com/member.php?mod=register" class="xi2 xw1">注册</a></td>
-									</tr>
-								</tbody>
-							</table>
-							<input type="hidden" name="quickforward" value="yes">
-							<input type="hidden" name="handlekey" value="ls">
-						</div>
-						<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
-							<p><a href=""><img src="/forum/Public/img/qq_login.gif" class="vm" alt="QQ登录"></a></p>
-							<p><a href=""><img src="/forum/Public/img/login_weibo.png" class="vm" alt="微博登录"></a></p>
-						</div>
-					</div>
-				</form>
-			</div>
-		<ul class="p_pop h_pop" id="plugin_menu" style="display: none">  
-		    <li><a href="" id="mn_plink_sign">每日签到</a></li>
-		</ul>
-		<form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($(&#39;scbar_txt&#39;))" action="" target="_blank">
-			<table cellspacing="0" cellpadding="0">
-				<tbody>
-				<tr>
-					<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech="" speech="" class=" xg1" placeholder="请输入搜索内容"></td>
-					<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">帖子</a></td>
-					<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
-					<td class="scbar_hot_td">
-					<div id="scbar_hot"><strong class="xw1">热搜: </strong></div>
-					</td>
-				</tr>
-				</tbody>
-			</table>
-		</form>
-		</div>
-		<ul id="scbar_type_menu" class="p_pop" style="display: none;">
-			<li><a href="javascript:;" rel="article">文章</a></li>
-			<li><a href="javascript:;" rel="forum" class="curtype">帖子</a></li>
-			<li><a href="javascript:;" rel="user">用户</a></li>
-		</ul>
-		<script type="text/javascript">
-		initSearchmenu('scbar', '');
-		</script>
-	</div>
-		
-	<div id="wp" class="wp">
-		<div id="pt" class="bm cl">
-		<div class="z">
-		<a href="" class="nvhm" title="首页"></a><em>&#187;</em><a href="">论坛</a></div>
-		<div class="z"></div>
-		</div>
-	<div id="ct" class="wp cl">
-		<div id="chart" class="bm bw0 cl">
-		<p class="chart z">今日: <em>266</em><span class="pipe">|</span>昨日: <em>654</em><span class="pipe">|</span>帖子: <em>1260925</em><span class="pipe">|</span>会员: <em>111210</em><span class="pipe">|</span>欢迎新会员: <em><a href="" target="_blank" class="xi2">kokosiya</a></em></p>
-		</div>
-	<div class="mn">
-<style>
-.nge_inactive{ background: #E5EDF2 url("static/image/common/titlebg.png") repeat-x 0 0;  border-right:1px solid #C2D5E3;border-bottom:1px solid #C2D5E3;}
-.nge_active{  border-right:1px solid #C2D5E3;}
-.nge_border_left{border-left:1px solid #C2D5E3;}
-.nge_border_right{border-right:1px solid #C2D5E3;}
-.nge_border{border-collapse: collapse;border:1px solid #C2D5E3;}
-.study_nge_zdy .nge_inactive{ background: #E5EDF2 url("source/plugin/study_nge/images/titlebg.png") repeat-x 0 0;  border-right:1px solid #C2D5E3;border-bottom:1px solid #C2D5E3;}
-.study_nge_zdy .nge_active{  border-right:1px solid #C2D5E3;}
-.study_nge_zdy .nge_border_left{border-left:1px solid #C2D5E3;}
-.study_nge_zdy .nge_border_right{border-right:1px solid #C2D5E3;}
-.study_nge_zdy .nge_border{border:1px solid #C2D5E3;}
-.study_nge_zdy .bm_h {border-width: 1px 0;background: #E5EDF2 url("source/plugin/study_nge/images/titlebg.png") repeat-x 0 0;padding: 0 10px;height: 31px;border-top: 1px solid #C2D5E3;border-bottom: 1px solid #C2D5E3;line-height: 31px;white-space: nowrap;overflow: hidden;}
-.study_nge_zdy .bm_h .o {float: right;width: 30px;}
-.study_nge_zdy .bm_h .o img {float: right;margin-top: 11px;cursor: pointer;}
-.study_nge_zdy .fl {border: 1px solid #CDCDCD;border-top: none;background: white;}
-.study_nge_zdy .bm{margin-bottom: 10px;}
-.study_nge_zdy .floattitle{border: 1px solid #CDCDCD;}
-</style>
-    <div class="fl bm">
-		<div class="bm bmw  flg cl">
-			<div class="bm_h cl">
-			<span class="o">
-			<img id="category_174_img" src="__PUBLIC/img/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse(&#39;category_174&#39;);">
-			</span>
-			<h2><a href="http://bbs.houdunwang.com/forum.php?gid=174" style="">PHP</a></h2>
-			</div>
-			<div id="category_174" class="bm_c" style="">
-				<table cellspacing="0" cellpadding="0" class="fl_tb">
-				<tbody>
-					<tr class="fl_row">
-						<td class="fl_g" width="24.9%">
-							<div class="fl_icn_g">
-							    <a href="http://bbs.houdunwang.com/forum-54-1.html"><img src="__PUBLIC/image/forum.gif" alt="DIV+CSS网页布局"></a>
-							</div>
-							<dl>
-								<dt><a href="http://bbs.houdunwang.com/forum-54-1.html">DIV+CSS网页布局</a></dt>
-								<dd><em>主题: 26</em>, <em>帖数: <span title="46966">4万</span></em></dd><dd>
-								<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42411&goto=lastpost#lastpost">最后发表: <span title="2014-12-23 16:16">昨天&nbsp;16:16</span></a>
-								</dd>
-							</dl>
-						</td>
-						<td class="fl_g" width="24.9%">
-						<div class="fl_icn_g">
-						    <a href="http://bbs.houdunwang.com/forum-52-1.html"><img src="__PUBLIC/image/forum.gif" alt="XHTML网页基础教程"></a>
-						</div>
-						<dl>
-							<dt><a href="http://bbs.houdunwang.com/forum-52-1.html">XHTML网页基础教程</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-							<dd><em>主题: 12</em>, <em>帖数: <span title="16884">1万</span></em></dd><dd>
-							<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42408&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 08:32">2&nbsp;小时前</span></a>
-							</dd>
-						</dl>
-						</td>
-						<td class="fl_g" width="24.9%">
-						<div class="fl_icn_g">
-						    <a href="http://bbs.houdunwang.com/forum-53-1.html"><img src="__PUBLIC/image/forum.gif" alt="DEDE织梦CMS教程"></a>
-						</div>
-						<dl>
-							<dt><a href="http://bbs.houdunwang.com/forum-53-1.html">DEDE织梦CMS教程</a></dt>
-							<dd><em>主题: 11</em>, <em>帖数: <span title="18971">1万</span></em></dd><dd>
-							<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=42412&goto=lastpost#lastpost">最后发表: <span title="2014-12-22 16:55">前天&nbsp;16:55</span></a>
-							</dd>
-						</dl>
-						</td>
-						<td class="fl_g" width="24.9%">
-						<div class="fl_icn_g">
-						    <a href="http://bbs.houdunwang.com/forum-67-1.html"><img src="__PUBLIC/image/forum.gif" alt="Mysql数据库视频教程"></a>
-						</div>
-						<dl>
-							<dt><a href="http://bbs.houdunwang.com/forum-67-1.html">Mysql数据库视频教程</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-							<dd><em>主题: 9</em>, <em>帖数: <span title="13953">1万</span></em></dd><dd>
-							<a href="http://bbs.houdunwang.com/forum.php?mod=redirect&tid=69042&goto=lastpost#lastpost">最后发表: <span title="2014-12-24 09:34">1&nbsp;小时前</span></a>
-							</dd>
-						</dl>
-						</td>
-					</tr>
-				</tbody>
-				</table>
-			</div>
-		</div>
-		<div class="bm bmw  flg cl">
-			<div class="bm_h cl">
-				<span class="o">
-				<img id="category_1_img" src="__PUBLIC/image/collapsed_no.gif" title="收起/展开" alt="收起/展开" onclick="toggle_collapse(&#39;category_1&#39;);">
-				</span>
-				<h2><a href="" style="">免费视频</a></h2>
-			</div>
-			<div id="category_1" class="bm_c" style="">
-				<table cellspacing="0" cellpadding="0" class="fl_tb">
-					<tbody>
-						<tr class="fl_row">
-							<td class="fl_g" width="24.9%">
-								<div class="fl_icn_g">
-								    <a href="l"><img src="__PUBLIC/image/forum.gif" alt="许愿墙开发(基于HDPHP)"></a>
-								</div>
-								<dl>
-									<dt><a href="http://bbs.houdunwang.com/forum-191-1.html">许愿墙开发(基于HDPHP)</a></dt>
-									<dd><em>主题: 7</em>, <em>帖数: 977</em></dd><dd>
-									<a href="">最后发表: <span title="2014-12-22 14:08">前天&nbsp;14:08</span></a>
-									</dd>
-								</dl>
-							</td>
-							<td class="fl_g" width="24.9%">
-								<div class="fl_icn_g">
-								    <a href="l"><img src="__PUBLIC/image/forum_new.gif" alt="博客系统开发（基于HDPHP）"></a>
-								</div>
-								<dl>
-									<dt><a href="l">博客系统开发（基于HDPHP）</a><em class="xw0 xi1" title="今日"> (1)</em></dt>
-									<dd><em>主题: 12</em>, <em>帖数: 1946</em></dd><dd>
-									<a href="">最后发表: <span title="2014-12-24 11:14">17&nbsp;分钟前</span></a>
-									</dd>
-								</dl>
-							</td>
-							<td class="fl_g" width="24.9%">
-								<div class="fl_icn_g">
-								    <a href="http://bbs.houdunwang.com/forum-183-1.html"><img src="__PUBLIC/image/forum.gif" alt="美团网开发(基于HDPHP)"></a>
-								</div>
-								<dl>
-									<dt><a href="">美团网开发(基于HDPHP)</a></dt>
-									<dd><em>主题: 44</em>, <em>帖数: 2904</em></dd><dd>
-									<a href="">最后发表: <span title="2014-12-23 15:20">昨天&nbsp;15:20</span></a>
-									</dd>
-								</dl>
-							</td>
-							<td class="fl_g" width="24.9%">
-								<div class="fl_icn_g">
-								    <a href=""><img src="__PUBLIC/image/forum.gif" alt="360问答系统(基于HDPHP)"></a>
-								</div>
-								<dl>
-									<dt><a href="">360问答系统(基于HDPHP)</a></dt>
-									<dd><em>主题: 30</em>, <em>帖数: 1467</em></dd><dd>
-									<a href="">最后发表: <span title="2014-12-22 20:45">前天&nbsp;20:45</span></a>
-									</dd>
-								</dl>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-    </div>
-</div>
-</div>
-</div>
-<div class="bm_c" style="display: none" id="focus_1">
-
-<p class="ptn cl"><a href="http://bbs.houdunwang.com/thread-69837-1-1.html" class="xi2 y" target="_blank">查看 &#187;</a></p>
-</div>
-<div class="wp a_f"><a href="__PUBLIC/image/后盾网论坛-php培训-php教程-公益php培训-PHP视频教程-北京PHP培训-PHP实战教程-javascript视频教程 - Powered by Discuz!.html" target="_blank"></a></div>
-<div id="ft" class="wp cl">
-<div id="flk" class="y">
-<p>
-<script type="text/javascript" reload="1">
-pgvMain({"discuzParams":{"r2":"5465112","ui":0,"rt":"forum","md":"index","pn":1,"qq":"000","logo":11},"extraParams":""});
+<script src="/forum/Public/Resources/Script/jquery.js"></script>
+<script src="/forum/Public/Resources/Script/main.js"></script>
+<script type="text/javascript">
+	function search_txt(){
+			      $("#search-text").attr("value","");	
+			      		   
+	}
 </script>
-<!-- Baidu Button BEGIN -->
-<noscript>&lt;a href="http://www.51.la/?16744957" target="_blank"&gt;&lt;img alt="我要啦免费统计" src="http://img.users.51.la/16744957.asp" style="border:none" /&gt;&lt;/a&gt;</noscript>
+<link rel="stylesheet" href="/forum/Public/Css/style.css" />
+<link rel="stylesheet" href="/forum/Public/Css/default.css" />
+
+<style>
+   #sinaLink{
+	                        background:url("__BBSPUBLIC__/Resources/Image/site_v5.png") no-repeat scroll 0 -26px transparent;
+	                       }
+	                       #qqLink{
+	                        background:url("__BBSPUBLIC__/Resources/Image/site_v5.png") no-repeat scroll 0 -102px transparent;
+	                       }
+</style>
+</head>
+<body>
+<div id="header-wrapper">
+
+	<div id="header">
+		<div id="menu">
+			<!-- 导航栏 -->
+            <ul>
+            	<li <?php if(($_GET["id"]) == ""): ?>class="current_page_item"<?php endif; ?>><a href="__PROJECT_URL__">论坛首页</a></li>
+                <?php $_result=NaviGation();if(is_array($_result)): $i = 0; $__LIST__ = $_result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li <?php if(($_GET["id"]) == $vo["id"]): ?>class="current_page_item"<?php endif; ?>><a href="<!--<?php echo (categoryurl($vo["id"])); ?>-->" class="last"><!--<?php echo ($vo["category_title"]); ?>--></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+			</ul>
+            <!-- end导航栏 -->
+		</div>
+		<!-- end #menu -->
+		<div id="search">
+			<form method="get" action="__PROJECT_URL__">
+            	<input type="hidden" name="m" value="search" />
+				<fieldset>
+					<input name="words" type="text" id="search-text" onclick="search_txt();" value="<?php if($_GET["words"] == ""): ?>请输入关键字<?php else: ?><!--<?php echo ($_GET["words"]); ?>--><?php endif; ?>" size="15" />
+					<label>
+					<select name="a" id="search_select" class="search_select">
+					  <option value="title">搜索标题</option>
+					  <option value="fulltext">搜索全文</option>
+				    </select>
+					</label>
+                    
+				<input type="submit" id="search-submit" class="search-submit" value="GO" />
+				</fieldset>
+              
+			</form>
+            <script>
+			   function search_txt(){
+			      $("#search-text").attr("value","");			   
+			   }
+			
+			</script>
+            
+		</div>
+		
+	</div>
 </div>
-<div id="frt">
-<p>Powered by <strong><a href="http://www.discuz.net/" target="_blank">Discuz!</a></strong> <em>X3.2</em></p>
-<p class="xs0">&#169; 2001-2013 <a href="http://www.comsenz.com/" target="_blank">Comsenz Inc.</a></p>
-</div></div>
+<!-- end #header -->
+<!-- end #header-wrapper -->
+<div id="logo">
+	<h1><a href="#">在线论坛 </a></h1>
+	<p><em>PHPMVC在线支持论坛 <a href="http://beauty-soft.net/book/php_mvc/">beauty-soft.net</a></em></p>
+</div>
+<hr />
+<!-- end #logo -->
+<div id="page">
+
+	<div id="page-bgtop">
+    	<div id="content">
+        	
+<?php if(is_array($category_list)): $i = 0; $__LIST__ = $category_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="post">
+		<p class="meta"><span class="date">【<!--<?php echo ($vo["category_title"]); ?>-->】</span> </p>
+				<div class="category">
+				<div class="category-list">
+                    <?php $_result=CategorySubList($vo['id']);if(is_array($_result)): $i = 0; $__LIST__ = $_result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vos): $mod = ($i % 2 );++$i;?><div class="category-block">
+                            <span class="category-image">
+                                <a href="<!--<?php echo (categoryurl($vos["id"])); ?>-->" title="" target="_self" >
+                                <?php if(($vos["category_image"]) != ""): ?><img src="<!--<?php echo ($vos["category_image"]); ?>-->" border="0"/>		
+                                <?php else: ?>
+                                <img src="__BBSPUBLIC__/Resources/Image/IE.png" width="90" height="68" border="0"/><?php endif; ?>
+                               </a>
+                            </span>
+                            <span class="category-item">
+                                <p>『 <a href="<!--<?php echo (categoryurl($vos["id"])); ?>-->"><!--<?php echo ($vos["category_title"]); ?>--></a> 』</p> 
+                                <p><em>主题:<!--<?php echo (categorydata($vos["id"],"topicNum")); ?>--></em><em>帖数:<!--<?php echo (categorydata($vos["id"],"topicAndreplyNum")); ?>--></em></p>
+                                <p>
+                                <a href="<!--<?php echo (pageurl($vos["id"])); ?>-->" target="_blank" title="<!--<?php echo (categorydata($vos["id"],"title")); ?>-->">
+                                <!--<?php echo (msubstr(categorydata($vos["id"],"title"),0,16,"utf-8",false)); ?>--></a></p>
+                            </span>
+                        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                    
+                    
+                    
+                </div>	
+		</div>
+</div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
+		
+
+		</div>
+		<?php if(($m) != "content"): ?><div id="sidebar">
+		
+		</div><?php endif; ?>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+<input type="hidden" id="sys_url" name="sys_url" value="<!--tmp-$Think.config.SYS_URL-->" />
+	<p>Copyright (c) 2012 BeautySoft  by <a href="http://beauty-soft.com/book/php_mvc">beauty-soft.com</a>.</p>
+</div>
+<!-- end #footer -->
 </body>
 </html>

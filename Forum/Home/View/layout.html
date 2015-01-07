@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>
+<if condition="$pageTitle neq '' ">
+<!--{$pageTitle}-->- __PROJECT_NAME__
+<else /> 首页- __PROJECT_NAME__
+</if>
+</title>
+<meta name="keywords" content="<!--{$keywords}--> -<!--{$pageTitle}-->-__PROJECT_NAME__" />
+<meta name="description" content="<!--{$description}-->- <!--{$pageTitle}-->-__PROJECT_NAME__" />
+
+<script src="__PUBLIC__/Resources/Script/jquery.js"></script>
+<script src="__PUBLIC__/Resources/Script/main.js"></script>
+<script type="text/javascript">
+	function search_txt(){
+			      $("#search-text").attr("value","");	
+			      		   
+	}
+</script>
+<link rel="stylesheet" href="__PUBLIC__/Css/style.css" />
+<link rel="stylesheet" href="__PUBLIC__/Css/default.css" />
+
+<style>
+   #sinaLink{
+	                        background:url("__BBSPUBLIC__/Resources/Image/site_v5.png") no-repeat scroll 0 -26px transparent;
+	                       }
+	                       #qqLink{
+	                        background:url("__BBSPUBLIC__/Resources/Image/site_v5.png") no-repeat scroll 0 -102px transparent;
+	                       }
+</style>
+</head>
+<body>
+<div id="header-wrapper">
+
+	<div id="header">
+		<div id="menu">
+			<!-- 导航栏 -->
+            <ul>
+            	<li <eq name="_GET.id" value="">class="current_page_item"</eq>><a href="__PROJECT_URL__">论坛首页</a></li>
+                <volist name=":NaviGation()" id="vo">				
+				 	<li <eq name="_GET.id" value="$vo.id">class="current_page_item"</eq>><a href="<!--{$vo.id|CategoryURL=###}-->" class="last"><!--{$vo.category_title}--></a></li>  
+                </volist>
+			</ul>
+            <!-- end导航栏 -->
+		</div>
+		<!-- end #menu -->
+		<div id="search">
+			<form method="get" action="__PROJECT_URL__">
+            	<input type="hidden" name="m" value="search" />
+				<fieldset>
+					<input name="words" type="text" id="search-text" onclick="search_txt();" value="<if condition='$_GET.words eq ""'>请输入关键字<else/><!--{$_GET.words}--></if>" size="15" />
+					<label>
+					<select name="a" id="search_select" class="search_select">
+					  <option value="title">搜索标题</option>
+					  <option value="fulltext">搜索全文</option>
+				    </select>
+					</label>
+                    
+				<input type="submit" id="search-submit" class="search-submit" value="GO" />
+				</fieldset>
+              
+			</form>
+            <script>
+			   function search_txt(){
+			      $("#search-text").attr("value","");			   
+			   }
+			
+			</script>
+            
+		</div>
+		
+	</div>
+</div>
+<!-- end #header -->
+<!-- end #header-wrapper -->
+<div id="logo">
+	<h1><a href="#">在线论坛 </a></h1>
+	<p><em>PHPMVC在线支持论坛 <a href="http://beauty-soft.net/book/php_mvc/">beauty-soft.net</a></em></p>
+</div>
+<hr />
+<!-- end #logo -->
+<div id="page">
+
+	<div id="page-bgtop">
+    	<div id="content">
+        	{__CONTENT__}
+		</div>
+		<neq name="m" value="content">
+		<div id="sidebar">
+		<include file="Public:sidebar" />
+		</div>
+		</neq>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+<input type="hidden" id="sys_url" name="sys_url" value="<!--tmp-$Think.config.SYS_URL-->" />
+	<p>Copyright (c) 2012 BeautySoft  by <a href="http://beauty-soft.com/book/php_mvc">beauty-soft.com</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

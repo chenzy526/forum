@@ -1,0 +1,218 @@
+@charset "utf-8";
+#page-bgtop{
+
+
+}
+.post{
+clear:both;
+}
+.nav_path{
+	font-size: 14px;
+	margin: 8px;
+}
+.nav_path a{
+	text-decoration: none;
+	color: #000000;
+}
+.nav_path a:hover{
+	color: #ebc60e;
+}
+.date{
+	font-size:18px;
+	}
+.entry li{
+	margin:0;
+	clear:both;
+	list-style:none;
+}
+.category-list{
+	clear:both;
+	list-style:none;
+	padding-left:10px;
+}
+.category-block{
+	float:left;
+	margin-right:10px;
+	width:280px;
+}
+.category-image{
+	float:left;
+	margin-right:4px;
+}
+.category-item{
+	width:200px;
+	font-size:14px;
+	padding-left:50px;
+	
+}
+.category-item a{
+	text-decoration:none;
+	color:#000000;
+}
+.category-item a:hover{
+	color:#FFCC00;
+	
+}
+.category-item p,.category-item em ,.category-item span{
+	font-style:normal;
+}
+.category-item p{
+	line-height: 8px;
+}
+.category_title{
+text-align: center;
+font-size: 20px;
+	
+}
+
+
+.entry li a{
+	text-decoration:none;
+	font-size:14px;
+	color:#666666;
+	line-height: 29px;
+}
+
+.entry li span{
+margin-left:16px;
+}
+.entry li span,.entry li span a,.entry li span em{
+	font-style:normal;
+	margin-right:4px;
+	color:#666666;
+	font-size:12px;
+}
+.entry li a:hover{
+	color:#FFCC00;
+	}
+.navpage{
+	text-align:right;
+	font-size: 14px;
+	
+}	
+.navpage a{
+	text-decoration: none;
+	color: rgba(0,0,0,0.95);
+}
+.navpage a a:hover{
+	color: #facf2f;
+}
+.v_link{
+	display: block;
+	height: 30px;
+	padding-top: 10px;
+	border-bottom:1px dashed rgba(0,0,0,0.32) ;
+	
+}
+.v_link span{
+	text-align: right;
+	float: right;
+	
+}
+.v_link .add_user_img{
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.v_link:hover{
+}
+.v_link_r{
+	padding: 4px;
+	clear: both;
+	height: 20px;
+	background: rgba(212,212,212,0.5);
+	font-size: 14px;
+}
+.v_link_r em{
+	font-style: normal;
+}
+.v_link_r .v_link_e{
+	text-align: right;
+	float: right;
+}
+.v_link_r .v_link_e em{
+padding-left: 50px;
+}
+.top_head_img{
+	margin-right: 6px;
+	float: left;
+}
+
+.UserNav{
+	display:block;
+	height: 50px;
+	background:#efefef;
+	width: 100%;
+	
+	
+}
+.UserNav ul{
+	margin: 0 auto;
+	text-align: center;
+}
+.UserNav li{
+	list-style: none;
+	float: left;
+	margin-top: 10px;
+	
+}
+.UserNav li a{
+	text-decoration: none;
+	font-size: 18px;
+	margin: 8px;
+}
+.UserNav li a:hover{
+	text-decoration:underline;
+}
+.wei_ico span{
+float:left;
+margin-right:6px;
+}
+.wei_ico a{
+    display: block;
+    height: 16px;
+    text-indent: -300em;
+    width: 16px;
+
+}
+
+.main{
+	font-size: 14px;
+}
+.main fieldset{
+	border: 1px dashed #bbbaba;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+.main li{
+	list-style: none;
+}
+.main em{
+	font-style: normal;
+	font-size: 12px;
+	margin-left: 8px;
+}
+.introduce{
+	width: 310px;
+}
+.sub{
+	text-align: center;
+	margin: 10px;
+}
+.sub input{
+	width: 100px;
+	height: 32px;
+	font-size: 12px;
+}
+.postTopic{
+	text-align: right;
+	float: right;
+}
+.postTopic input{
+	font-size: 14px;
+	margin-top: 2px;
+}
+.golist a{
+	text-align: right;
+	float: right;
+}
