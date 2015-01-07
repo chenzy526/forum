@@ -9,4 +9,6 @@ return array(
 		'DB_PWD'      =>   '',
 		'DB_PREFIX'   =>   'bbs_',
 		'SHOW_PAGE_TRACE'  => true,
+		'TMPL_L_DELIM'          => '<!--{',
+		'TMPL_R_DELIM'          => '}-->',
 );

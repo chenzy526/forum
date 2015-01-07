@@ -80,7 +80,8 @@ hr { display: none; }
 
 #header-wrapper {
 	height: 60px;
-	background: #FFDE00;
+	/*background: #FFDE00;*/
+	background:#ffffff;
 }
 
 #header {
