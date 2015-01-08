@@ -11,4 +11,13 @@ return array(
 		'SHOW_PAGE_TRACE'  => true,
 		'TMPL_L_DELIM'          => '<!--{',
 		'TMPL_R_DELIM'          => '}-->',
+		//+----------------------------------
+		//|自定义项目常量
+		'PROJECT_NAME'	=> '论坛讨论系统',
+		'PROJECT_URL'   =>  'http://localhost/forum/bbs.php',
+		//|自定义项目常量结束
+		//+-----------------------------------
+		'URL_MODEL'  =>0,
+		
+		
 );

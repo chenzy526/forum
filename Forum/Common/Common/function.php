@@ -163,6 +163,9 @@ function PageURL($id,$page=""){
  * @param unknown_type $id
  */
 function CategoryURL($id,$page=""){
+	//+--------------
+	//if ($id == 1){return  "111111111";}
+	//+--------------
 	$config=C("TMPL_PARSE_STRING");
 	if (C("URL_MODEL")==4){
 		//html伪静态
@@ -174,9 +177,11 @@ function CategoryURL($id,$page=""){
 		}
 	}else{
 		if (!$page){
-			$url=__APP__."?a=index&m=Category&id=".$id;
+			//$url=__APP__."?a=index&m=Category&id=".$id;
+			$url=__APP__."?m=Home&c=Index&action=Category&id=".$id;
 		}else {
-			$url=__APP__."?a=index&m=Category&id=".$id."&p=".$page;
+			//$url=__APP__."?a=index&m=Category&id=".$id."&p=".$page;
+			$url=__APP__."?m=Home&c=Index&action=Category&id=".$id."&p=".$page;
 		}
 	}
 	return $url;

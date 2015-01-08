@@ -3,11 +3,11 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>
-	<?php if($pageTitle != '' ): echo ($pageTitle); ?>- __PROJECT_NAME__
-	<?php else: ?> 首页- __PROJECT_NAME__<?php endif; ?>
+	<?php if($pageTitle != '' ): echo ($pageTitle); ?>- <?php echo C(PROJECT_NAME);?>
+	<?php else: ?> 首页- <?php echo C(PROJECT_NAME); endif; ?>
 </title>
-<meta name="keywords" content="<?php echo ($keywords); ?> -<?php echo ($pageTitle); ?>-__PROJECT_NAME__" />
-<meta name="description" content="<?php echo ($description); ?>- <?php echo ($pageTitle); ?>-__PROJECT_NAME__" />
+<meta name="keywords" content="<?php echo ($keywords); ?> -<?php echo ($pageTitle); ?>-<?php echo C(PROJECT_NAME);?>" />
+<meta name="description" content="<?php echo ($description); ?>- <?php echo ($pageTitle); ?>-<?php echo C(PROJECT_NAME);?>" />
 <script src="/forum/Public/Script/jquery.js"></script>
 <script src="/forum/Public/Script/main.js"></script>
 	<script type="text/javascript">
@@ -29,14 +29,14 @@
 		<div id="menu">
 			<!-- 导航栏 -->
             <ul>
-            	<li <?php if(($_GET["id"]) == ""): ?>class="current_page_item"<?php endif; ?>><a href="__PROJECT_URL__">论坛首页</a></li>
+            	<li <?php if(($_GET["id"]) == ""): ?>class="current_page_item"<?php endif; ?>><a href="<?php echo C(PROJECT_URL);?>">论坛首页</a></li>
                 <?php $_result=NaviGation();if(is_array($_result)): $i = 0; $__LIST__ = $_result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li <?php if(($_GET["id"]) == $vo["id"]): ?>class="current_page_item"<?php endif; ?>><a href="<?php echo (categoryurl($vo["id"])); ?>" class="last"><?php echo ($vo["category_title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
             <!-- end导航栏 -->
 		</div>
 		<!-- end #menu -->
 		<div id="search">
-			<form method="get" action="__PROJECT_URL__">
+			<form method="get" action="<?php echo C(PROJECT_URL);?>">
             	<input type="hidden" name="m" value="search" />
 				<fieldset>
 					<input name="words" type="text" id="search-text" onclick="search_txt();" value="<?php if($_GET["words"] == ""): ?>请输入关键字<?php else: echo ($_GET["words"]); endif; ?>" size="15" />

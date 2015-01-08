@@ -4,12 +4,12 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>
 	<if condition="$pageTitle neq '' ">
-	<!--{$pageTitle}-->- __PROJECT_NAME__
-	<else /> 首页- __PROJECT_NAME__
+	<!--{$pageTitle}-->- <!--{:C(PROJECT_NAME)}-->
+	<else /> 首页- <!--{:C(PROJECT_NAME)}-->
 	</if>
 </title>
-<meta name="keywords" content="<!--{$keywords}--> -<!--{$pageTitle}-->-__PROJECT_NAME__" />
-<meta name="description" content="<!--{$description}-->- <!--{$pageTitle}-->-__PROJECT_NAME__" />
+<meta name="keywords" content="<!--{$keywords}--> -<!--{$pageTitle}-->-<!--{:C(PROJECT_NAME)}-->" />
+<meta name="description" content="<!--{$description}-->- <!--{$pageTitle}-->-<!--{:C(PROJECT_NAME)}-->" />
 <script src="__PUBLIC__/Script/jquery.js"></script>
 <script src="__PUBLIC__/Script/main.js"></script>
 	<script type="text/javascript">
@@ -31,7 +31,7 @@
 		<div id="menu">
 			<!-- 导航栏 -->
             <ul>
-            	<li <eq name="_GET.id" value="">class="current_page_item"</eq>><a href="__PROJECT_URL__">论坛首页</a></li>
+            	<li <eq name="_GET.id" value="">class="current_page_item"</eq>><a href="<!--{:C(PROJECT_URL)}-->">论坛首页</a></li>
                 <volist name=":NaviGation()" id="vo">				
 				 	<li <eq name="_GET.id" value="$vo.id">class="current_page_item"</eq>><a href="<!--{$vo.id|CategoryURL=###}-->" class="last"><!--{$vo.category_title}--></a></li>  
                 </volist>
@@ -40,7 +40,7 @@
 		</div>
 		<!-- end #menu -->
 		<div id="search">
-			<form method="get" action="__PROJECT_URL__">
+			<form method="get" action="<!--{:C(PROJECT_URL)}-->">
             	<input type="hidden" name="m" value="search" />
 				<fieldset>
 					<input name="words" type="text" id="search-text" onclick="search_txt();" value="<if condition='$_GET.words eq ""'>请输入关键字<else/><!--{$_GET.words}--></if>" size="15" />
