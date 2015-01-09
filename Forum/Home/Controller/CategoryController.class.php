@@ -1,15 +1,16 @@
 <?php
-namespace Home\controller;
-use Home\controller\PublicController;
+namespace Home\Controller;
+use Home\Controller\PublicController;
 //版块控制器
-class CategoryAction extends PublicController{
+class CategoryController extends PublicController{
 	public function index(){
-		load("extend");
+		//load("extend");
 		$Category=D("Category");
 		$obHead=$Category->field("parent_id,id")->where(array("id"=>$_GET["id"],"category_stats"=>1))->find();
 		if(!$obHead["parent_id"]){
 			//非终极版块
 			$this->assign("list",CategorySubList($_GET["id"]));
+			//print_r(CategorySubList($_GET["id"]));die;
 			$this->display();
 		}else{
 			//置顶

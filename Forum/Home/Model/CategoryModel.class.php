@@ -106,7 +106,7 @@ class CategoryModel extends Model{
 		$where=array(
 			"parent_id"=>$id,
 			"category_stats"=>1,
-			"category_level"=>array("neq",0),	
+			"category_level"=>array('neq',0),	
 					
 		);
 		$rows=$Category->where($where)->order("category_order desc")->select();

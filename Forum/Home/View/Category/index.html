@@ -1,18 +1,18 @@
 
-<volist name="category_list" id="vo">
-<div class="post">
-		<p class="meta"><span class="date">【<!--{$vo.category_title}-->】</span> </p>
+	<div class="nav_path">导航：<span class="path"><!--{:NavPath($_GET['id'])}--></span></div>
+	<volist name="list" id="vos">
+    <div class="post">
+		<p class="meta"><span class="date">【<!--{$vos.category_title}-->】</span> </p>
 				<div class="category">
 				<div class="category-list">
-                    <volist name=":CategorySubList($vo['id'])" id="vos">
                         <div class="category-block">
                             <span class="category-image">
                                 <a href="<!--{$vos.id|CategoryURL=###}-->" title="" target="_self" >
-	                                <neq name="vos.category_image" value="">
-	                                	<img src="<!--{$vos.category_image}-->" border="0"/>		
-	                                <else/>
-	                                	<img src="__PUBLIC__/Image/IE.png" width="90" height="68" border="0"/>		
-	                                </neq>
+                                <neq name="vos.category_image" value="">
+                                <img src="<!--{$vos.category_image}-->" border="0"/>		
+                                <else/>
+                                <img src="__PUBLIC__/Image/IE.png" width="90" height="68" border="0"/>		
+                                </neq>
                                </a>
                             </span>
                             <span class="category-item">
@@ -23,11 +23,9 @@
                                 <!--{$vos.id|CategoryData=###,"title"|msubstr=###,0,16,"utf-8",false}--></a></p>
                             </span>
                         </div>
-                    </volist>
-                </div>	
+             </div>	
+             </div>
 		</div>
-</div>
-</volist>
 
-
-		
+    
+    </volist>

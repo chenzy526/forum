@@ -178,10 +178,10 @@ function CategoryURL($id,$page=""){
 	}else{
 		if (!$page){
 			//$url=__APP__."?a=index&m=Category&id=".$id;
-			$url=__APP__."?m=Home&c=Index&action=Category&id=".$id;
+			$url=__APP__."?m=Home&c=Category&id=".$id;
 		}else {
 			//$url=__APP__."?a=index&m=Category&id=".$id."&p=".$page;
-			$url=__APP__."?m=Home&c=Index&action=Category&id=".$id."&p=".$page;
+			$url=__APP__."?m=Home&c=Category&id=".$id."&p=".$page;
 		}
 	}
 	return $url;

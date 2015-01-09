@@ -1,0 +1,62 @@
+<div>
+			<div class="nav_path">导航：<span class="path"><!--{:NavPath($_GET['id'])}--></span></div>
+			<div  class="category_title"><!--{$pageTitle}--></div>
+			<elt name="_GET.p" value="1">
+			<egt name="top_list|count=###" value="1">
+			<div class="post">
+				<p class="meta"><span class="date">【本版置顶】</span> </p>
+				<div class="entry" id="top_list">
+				<!--列表-->
+                <volist name="top_list" id="vo">   
+                        <li class="v_link">
+                        <em class="top_head_img"><!--{:TopicHeadImage($vo['id'],PageURL($vo['id']))}--></em>
+                             <a style="font-size:16px" title="<!--{$vo.title}-->" href="<!--{$vo.id|PageURL=###}-->" ><!--{$vo.title}--></a>
+                             <span>
+                             	<em>用户:<a href="__APP__?m=user&uid=<!--{$vo.add_user}-->"><!--{$vo.add_user|uidToData=###,"user_nickname"}--></a></em><em>时间:<!--{$vo.add_time|date="m月d日H:i",###}--></em>
+                             </span>
+                             
+                        </li>
+                    </volist>
+				</div>
+			</div>
+            </egt>
+			</elt>
+            <div class="post">
+				<p class="meta"><span class="date">【普通主题】</span><span class="postTopic"><a href="__PROJECT_URL__?m=posttopic&cid=<!--{$_GET.id}-->"><input type="submit" value="发表新帖" /></a></span> </p>
+				<div class="entry">
+				<!--列表-->
+						<div class="v_link_r">
+                             <span class="v_link_l">筛选：【图片】【推荐】</span>
+                             <span class="v_link_e">
+                             	<em>发表</em><em>最后回复</em>
+                             </span>
+                        </div>
+                <volist name="list" id="vo">   
+                        <li class="v_link">
+                          <em class="top_head_img"><!--{:TopicHeadImage($vo['id'],PageURL($vo['id']))}--></em>
+                             <a title="<!--{$vo.title}-->" href="<!--{$vo.id|PageURL=###}-->" ><!--{$vo.title|msubstr=###,0,16,'utf-8',false}--></a>［add:<!--{$vo.add_time|date="m月d日H:i",###}-->］
+                             <span>
+                                <em class="add_user_img"><img src="<!--{$vo.add_user|uidToData=###,"head_image"}-->" width="25" height="25" /></em>
+                             	<em>
+                             	<a title="<!--{$vo.add_user|uidToData=###,'user_nickname'}-->" href="__APP__?m=user&uid=<!--{$vo.add_user}-->"><!--{$vo.add_user|uidToData=###,"user_nickname"|msubstr=###,0,3,'utf-8',false}-->
+                             	</a>
+                             	
+                             	</em><em>【<if condition="getLastReplayUser($vo['id']) eq null">
+                             	<a title="<!--{$vo.add_user|uidToData=###,'user_nickname'}-->" href="__APP__?m=user&uid=<!--{$vo.add_user}-->"><!--{$vo.add_user|uidToData=###,"user_nickname"|msubstr=###,0,3,'utf-8',false}-->
+                             	</a>
+                             		
+	                             	<else /> 
+	                             	<a title="<!--{$vo.add_user|getLastReplayUser=###,'user_nickname'}-->" href="__APP__?m=user&uid=<!--{$vo.add_user}-->"><!--{$vo.add_user|getLastReplayUser=###,"user_nickname"|msubstr=###,0,3,'utf-8',false}-->
+                             	</a>
+	                             	</if>】</em>
+                             </span>
+                             
+                        </li>
+                    </volist>
+				</div>
+			</div>
+</div>
+<div class="navpage">
+<!--{$reg}-->
+	<!--{$navpage}-->
+    </div>
