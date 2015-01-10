@@ -20,7 +20,7 @@
                                 <p><em>主题:<!--{$vos.id|CategoryData=###,"topicNum"}--></em><em>帖数:<!--{$vos.id|CategoryData=###,"topicAndreplyNum"}--></em></p>
                                 <p>
                                 <a href="<!--{$vos.id|PageURL=###}-->" target="_blank" title="<!--{$vos.id|CategoryData=###,"title"}-->">
-                                <!--{$vos.id|CategoryData=###,"title"|msubstr=###,0,16,"utf-8",false}--></a></p>
+                                <!--{$vos.id|CategoryData=###,"title"|msubstr=###,0,12,"utf-8",false}--></a></p>
                             </span>
                         </div>
                     </volist>
@@ -28,6 +28,3 @@
 		</div>
 </div>
 </volist>
-
-
-		

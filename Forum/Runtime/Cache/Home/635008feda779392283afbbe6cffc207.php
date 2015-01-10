@@ -86,15 +86,12 @@
                                 <p><em>主题:<?php echo (categorydata($vos["id"],"topicNum")); ?></em><em>帖数:<?php echo (categorydata($vos["id"],"topicAndreplyNum")); ?></em></p>
                                 <p>
                                 <a href="<?php echo (pageurl($vos["id"])); ?>" target="_blank" title="<?php echo (categorydata($vos["id"],"title")); ?>">
-                                <?php echo (msubstr(categorydata($vos["id"],"title"),0,16,"utf-8",false)); ?></a></p>
+                                <?php echo (msubstr(categorydata($vos["id"],"title"),0,12,"utf-8",false)); ?></a></p>
                             </span>
                         </div><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>	
 		</div>
 </div><?php endforeach; endif; else: echo "" ;endif; ?>
-
-
-		
 
 		</div>
 		<?php if(($m) != "content"): ?><div id="sidebar">

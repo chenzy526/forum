@@ -50,7 +50,7 @@ class CategoryModel extends Model{
 				FROM `{$DB_PREFIX}topic`  as topic, {$DB_PREFIX}reply as reply where ($where_id
 				 and reply.topic_id=reply.id {$where})
 				 %ORDER%
-				 %LIMIT%
+        		 %LIMIT%
 			";
 			$rows=$topic->limit($limit)->order("reply_time desc,add_time desc,id desc")->query($sql,true);
 			

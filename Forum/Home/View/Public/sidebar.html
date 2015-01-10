@@ -6,7 +6,7 @@
 					<div id="minicard"></div>
 					<if condition="$login eq 1 ">
 						<script type="text/javascript">
-							$("#minicard").load("__PROJECT_URL__"+"?m=user&a=userminicard");
+							$("#minicard").load("{:C(PROJECT_URL)}"+"?m=user&a=userminicard");
 						</script>
 					<else /> 
 					<form  method="post" id="userloginform" name="userloginform" onsubmit="return userlogin(this)" action="__PROJECT_URL__?m=user&a=userlogin">

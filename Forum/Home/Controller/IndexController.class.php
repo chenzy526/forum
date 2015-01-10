@@ -7,6 +7,7 @@ class IndexController extends Controller {
     public function index(){
     	//load("extend");
     	$category = D("Category");
+    	//$data = categorydata(8,"topicNum");print_r($data);die;
     	//推荐主题
     	$where=array(
     		"parent_id"=>0,
